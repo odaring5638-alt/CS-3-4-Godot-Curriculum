@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=4 format=3 uid="uid://c0u248ro0lmlw"]
+
+[ext_resource type="SpriteFrames" uid="uid://doqat4n0qsu7i" path="res://resources/animations/blue_slime_frames.tres" id="1_d61pr"]
+[ext_resource type="Script" uid="uid://bxtjti5hlu2op" path="res://scripts/resources/enemy_resource.gd" id="2_d61pr"]
+[ext_resource type="Texture2D" uid="uid://dk1xjsq7x5le8" path="res://assets/Platformer Slimes v1.3/Blue Slime Spritesheet.png" id="2_mavqy"]
+
+[resource]
+script = ExtResource("2_d61pr")
+enemy_id = "basic_slime"
+enemy_name = "Fast Slime"
+enemy_texture = ExtResource("2_mavqy")
+animated_frames = ExtResource("1_d61pr")
+sprite_scale = 2.0
+max_health = 15.0
+move_speed = 250.0
+detection_range = 800.0
