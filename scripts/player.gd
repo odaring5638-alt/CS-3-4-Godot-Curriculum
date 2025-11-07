@@ -143,8 +143,11 @@ func heal(amount: float) -> bool:
 	current_health += amount
 	current_health = min(max_health, current_health)
 	health_changed.emit(current_health, max_health)
-
+#func upgrade_speed(amount: float) -> bool:
+	#move_speed += amount
+	#print("Speed increased by ", amount, "! New speed: ", move_speed)
 	return true
+
 
 
 ## Gain experience points
