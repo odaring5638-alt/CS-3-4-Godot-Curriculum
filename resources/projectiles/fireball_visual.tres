@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ProjectileResource" load_steps=3 format=3 uid="uid://4aalh4hk0krl"]
+
+[ext_resource type="Script" uid="uid://dmxm5o1dwdxrs" path="res://scripts/resources/projectile_resource.gd" id="1_04wtq"]
+[ext_resource type="Texture2D" uid="uid://0weq1for83dh" path="res://assets/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_4.png" id="2_04wtq"]
+
+[resource]
+script = ExtResource("1_04wtq")
+texture = ExtResource("2_04wtq")
+scale = Vector2(0.5, 0.5)
+lifetime = 2.0
+damage = 15.0
