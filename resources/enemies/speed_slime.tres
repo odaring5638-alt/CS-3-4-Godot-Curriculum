@@ -14,3 +14,4 @@ sprite_scale = 2.0
 max_health = 15.0
 move_speed = 250.0
 detection_range = 800.0
+xp_value = 5

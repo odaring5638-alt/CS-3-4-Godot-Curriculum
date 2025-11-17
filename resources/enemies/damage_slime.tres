@@ -6,12 +6,13 @@
 
 [resource]
 script = ExtResource("2_hm757")
-enemy_id = "basic_slime"
-enemy_name = "Basic Slime"
+enemy_id = "damage_slime"
+enemy_name = "Damage Slime"
 enemy_texture = ExtResource("2_qagph")
 animated_frames = ExtResource("1_hm757")
 sprite_scale = 2.0
-max_health = 60.0
-contact_damage = 8.0
-move_speed = 80.0
+max_health = 70.0
+contact_damage = 12.0
+move_speed = 40.0
 detection_range = 800.0
+xp_value = 15

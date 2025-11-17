@@ -78,7 +78,7 @@ class_name StatUpgradeResource
 enum UpgradeType {
 	HEALTH,
 	SPEED,
-	DAMAGE,    ## Increases max health
+	DAMAGE,   
 		
 }
 
