@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=4 format=3 uid="uid://bpfps3yah7l8j"]
+
+[ext_resource type="SpriteFrames" uid="uid://vb5a3rr6m1hr" path="res://resources/animations/red_slime_frames.tres" id="1_hm757"]
+[ext_resource type="Script" uid="uid://bxtjti5hlu2op" path="res://scripts/resources/enemy_resource.gd" id="2_hm757"]
+[ext_resource type="Texture2D" uid="uid://cevjaocy03o5v" path="res://assets/Platformer Slimes v1.3/Red Slime Spritesheet.png" id="2_qagph"]
+
+[resource]
+script = ExtResource("2_hm757")
+enemy_id = "basic_slime"
+enemy_name = "Basic Slime"
+enemy_texture = ExtResource("2_qagph")
+animated_frames = ExtResource("1_hm757")
+sprite_scale = 2.0
+max_health = 60.0
+contact_damage = 8.0
+move_speed = 80.0
+detection_range = 800.0
