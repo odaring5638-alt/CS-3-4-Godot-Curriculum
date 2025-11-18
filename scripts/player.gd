@@ -46,8 +46,17 @@ class_name Player
 # Movement - Controls how fast the player moves
 @export var move_speed: float = 200.0
 
-
+@export var weapons: Array[WeaponResource]
 var facing: Vector2 = Vector2.ZERO
+
+@onready var ws: WeaponSystem = $WeaponSystem
+
+
+func switch_weapon():
+	if Input.is_action_just_pressed("Switch weapon1"):
+		ws.equip_weapon(weapons.get(0))
+	if Input.is_action_just_pressed("switch weapon2"):
+		ws.equip_weapon(weapons.get(1))
 
 # Character Identity
 @export var character_name: String = "Survivor"
@@ -82,6 +91,8 @@ func _ready():
 
 func _physics_process(_delta):
 	handle_movement()
+	switch_weapon()
+	
 
 func handle_movement():
 	# Get input direction from arrow keys
